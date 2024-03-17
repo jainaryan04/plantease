@@ -266,7 +266,7 @@ img {
     background-color: #303030; }
 
 /* :: 3.8.0 alazea Button */
-.alazea-btn {
+.scroll-btn {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
   position: relative;
@@ -283,7 +283,7 @@ img {
   line-height: 42px;
   text-transform: uppercase;
   font-weight: 600; }
-  .alazea-btn.active, .alazea-btn:hover, .alazea-btn:focus {
+  .scroll-btn.active, .scroll-btn:hover, .scroll-btn:focus {
     font-size: 16px;
     color: #70c745;
     font-weight: 600;
