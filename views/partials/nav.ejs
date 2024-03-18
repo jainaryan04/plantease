@@ -51,7 +51,7 @@
                                             <li><a href="">Category 4</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/garden">My Garden</a></li>
+                                    <li><a href="/care">Care</a></li>
                                     <% if (locals.email) { %> 
                                         <li style="color: white;"> <%= locals.email %> </li>
                                     <%} else { %>
@@ -66,8 +66,8 @@
                         </div>
                     </nav>
                     <div class="search-form">
-                        <form action="#" method="get">
-                            <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+                        <form action="/search" method="POST">
+                            <input type="text" name="t" id="search" placeholder="Type keywords &amp; press enter...">
                             <button type="submit" class="d-none"></button>
                         </form>
                         <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>

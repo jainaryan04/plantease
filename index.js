@@ -2,9 +2,12 @@ import express from "express"
 import bodyParser from "body-parser"
 import pg from "pg"
 import path from "path"
+import axios from "axios"
 import { fileURLToPath } from 'url';
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const API_URL="https://perenual.com/api/species-list"
+const API_KEY="sk-ipX865f8885b4bec24783"
 const app=express();
 const port=3000;
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,34 +27,6 @@ app.get("/",(req,res)=>
   res.render("index.ejs")
 })
 
-app.get("/cart",(req,res)=>
-{
-  res.render("cart.ejs");
-})
-
-app.get("/care",(req,res)=>
-{
-  res.render("care.ejs");
-})
-
-app.get("/acc",(req,res)=> //account
-{
-  res.render("acc.ejs"); 
-})
-
-app.post("/search",(req,res)=> 
-{
-  let src=req.body["t"]
-  console.log(src)
-  for(var i=0;i<plant.length;i++)
-  {
-    if(plant[i]==src)
-    break;
-  }
-  res.render("search.ejs",{t:`./images/${1}.jpg`});
-
-    
-})
 
 app.get("/login", (req, res) => {
   res.render("login.ejs");
@@ -113,6 +88,32 @@ app.post("/login", async (req, res) => {
 app.get("/garden",(req,res)=>
 {
   res.render("garden.ejs")
+})
+app.get("/care",(req,res)=>
+{
+  res.render("care.ejs")
+})
+
+var src=""
+
+app.post("/search",async(req,res)=> 
+{
+  src=req.body["t"];
+  console.log(src)
+  try {
+    console.log(API_URL+"?key="+API_KEY+"&q="+src)
+    const result = await axios.get(API_URL,{
+        params: {
+          key:API_KEY,
+          q:src,
+        },
+      });
+    console.log(result)
+    res.render("search.ejs", { content: JSON.stringify(result.data) });
+    console.log(JSON.stringify(result.data))
+  } catch (error) {
+    res.render("search.ejs", { content: JSON.stringify(error.response.data) });
+  }
 })
 
 app.listen(port, () => {
