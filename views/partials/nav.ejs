@@ -41,8 +41,8 @@
                             </div>
                             <div class="classynav">
                                 <ul>
-                                    <li><a>Explore</a></li>
-                                    <li><a href="about.html">Care</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    
                                     <li><a href="#">Buy</a>
                                         <ul class="dropdown">
                                             <li><a href="">Category 1</a></li>
@@ -51,8 +51,12 @@
                                             <li><a href="">Category 4</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html">Garden</a></li>
+                                    <li><a href="/garden">My Garden</a></li>
+                                    <% if (locals.email) { %> 
+                                        <li style="color: white;"> <%= locals.email %> </li>
+                                    <%} else { %>
                                     <li><a href="login">Login</a></li>
+                                    <% } %>
                                 </ul>
                                 <div id="searchIcon">
                                     <i class="fa fa-search" aria-hidden="true"></i>

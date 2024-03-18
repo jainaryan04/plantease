@@ -60,6 +60,7 @@ app.get("/register", (req, res) => {
   res.render("register.ejs");
 });
 
+
 app.post("/register", async(req,res)=> {
   const email = req.body.email;
   const password = req.body.password;
@@ -70,14 +71,14 @@ app.post("/register", async(req,res)=> {
     ]);
 
     if (checkResult.rows.length > 0) {
-      res.send("Email already exists. Try logging in.");
+      res.render("login.ejs",{msg:"Email aldready exists. Try logging in"});
     } else {
       const result = await db.query(
         "INSERT INTO users (email, password) VALUES ($1, $2)",
         [email, password]
       );
       console.log(result);
-      res.render("");
+      res.render("index.ejs",{email:email});
     }
   } catch (err) {
     console.log(err);
@@ -97,17 +98,22 @@ app.post("/login", async (req, res) => {
       const storedPassword = user.password;
 
       if (password === storedPassword) {
-        res.render("");
+        res.render("index.ejs",{email:email});
       } else {
-        res.send("Incorrect Password");
+        res.render("login.ejs",{msg:"Incorrect Password. Try again"});
       }
     } else {
-      res.send("User not found");
+      res.render("login.ejs",{msg:"User not found"});
     }
   } catch (err) {
     console.log(err);
   }
 });
+
+app.get("/garden",(req,res)=>
+{
+  res.render("garden.ejs")
+})
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
