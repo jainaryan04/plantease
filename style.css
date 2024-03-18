@@ -516,6 +516,23 @@ img {
             left: 0;
             z-index: 9999;
             box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2); }
+          .header-area #cartIcon {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            color: #ffffff;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 50px; }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .header-area #cartIcon {
+                margin-left: 30px;
+                margin-top: 15px; } }
+            @media only screen and (max-width: 767px) {
+              .header-area #cartIcon {
+                margin-left: 30px;
+                margin-top: 15px; } }
+            .header-area #cartIcon:hover, .header-area #cartIcon:focus {
+              color: #70c745; }
           .header-area #searchIcon {
             -webkit-transition-duration: 500ms;
             transition-duration: 500ms;
