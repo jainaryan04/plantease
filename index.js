@@ -93,6 +93,10 @@ app.get("/care",(req,res)=>
 {
   res.render("care.ejs")
 })
+app.get("/shop",(req,res)=>
+{
+  res.render("shop.ejs")
+})
 
 var src=""
 
@@ -115,6 +119,14 @@ app.post("/search",async(req,res)=>
     res.render("search.ejs", { content: JSON.stringify(error.response.data) });
   }
 })
+
+app.get("/prod1",(req,res)=>{
+  res.render("prod1.ejs")
+})
+app.get("/prod2",(req,res)=>{
+  res.render("prod2.ejs")
+})
+
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
