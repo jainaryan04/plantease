@@ -377,94 +377,94 @@ img {
           position: absolute; }
         .header-area .top-header-area .top-header-content .top-header-meta .cart a {
           margin-right: 0; }
-  .header-area .alazea-main-menu {
+  .header-area .main-menu {
     position: relative;
     z-index: 1;
     -webkit-transition-duration: 200ms;
     transition-duration: 200ms; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .header-area .alazea-main-menu .classy-navbar .classy-menu {
+      .header-area .main-menu .classy-navbar .classy-menu {
         background-color: #111111; } }
     @media only screen and (max-width: 767px) {
-      .header-area .alazea-main-menu .classy-navbar .classy-menu {
+      .header-area .main-menu .classy-navbar .classy-menu {
         background-color: #111111; } }
-    .header-area .alazea-main-menu .classy-nav-container {
+    .header-area .main-menu .classy-nav-container {
       background-color: transparent; }
-    .header-area .alazea-main-menu .classy-navbar {
+    .header-area .main-menu .classy-navbar {
       height: 90px;
       padding: 0; }
-      .header-area .alazea-main-menu .classy-navbar .nav-brand {
+      .header-area .main-menu .classy-navbar .nav-brand {
         line-height: 1; }
       @media only screen and (max-width: 767px) {
-        .header-area .alazea-main-menu .classy-navbar {
+        .header-area .main-menu .classy-navbar {
           height: 70px; } }
-    .header-area .alazea-main-menu .classynav ul li a {
+    .header-area .main-menu .classynav ul li a {
       padding: 0 30px;
       font-weight: 500;
       text-transform: capitalize;
       font-size: 20px;
       color: #ffffff; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .header-area .alazea-main-menu .classynav ul li a {
+        .header-area .main-menu .classynav ul li a {
           font-size: 18px;
           padding: 0 20px; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .header-area .alazea-main-menu .classynav ul li a {
+        .header-area .main-menu .classynav ul li a {
           background-color: #111111;
           font-size: 16px;
           color: #ffffff;
           border-bottom: none; } }
       @media only screen and (max-width: 767px) {
-        .header-area .alazea-main-menu .classynav ul li a {
+        .header-area .main-menu .classynav ul li a {
           background-color: #111111;
           font-size: 16px;
           color: #ffffff;
           border-bottom: none; } }
-      .header-area .alazea-main-menu .classynav ul li a:hover, .header-area .alazea-main-menu .classynav ul li a:focus {
+      .header-area .main-menu .classynav ul li a:hover, .header-area .main-menu .classynav ul li a:focus {
         color: #70c745; }
-      .header-area .alazea-main-menu .classynav ul li a::after {
+      .header-area .main-menu .classynav ul li a::after {
         color: #ffffff; }
-    .header-area .alazea-main-menu .classynav ul li ul li a {
+    .header-area .main-menu .classynav ul li ul li a {
       padding: 0 20px;
       color: #303030;
       font-size: 14px;
       border-bottom: none; }
-      .header-area .alazea-main-menu .classynav ul li ul li a::after {
+      .header-area .main-menu .classynav ul li ul li a::after {
         color: #303030; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .header-area .alazea-main-menu .classynav ul li ul li a::after {
+          .header-area .main-menu .classynav ul li ul li a::after {
             color: #ffffff; } }
         @media only screen and (max-width: 767px) {
-          .header-area .alazea-main-menu .classynav ul li ul li a::after {
+          .header-area .main-menu .classynav ul li ul li a::after {
             color: #ffffff; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .header-area .alazea-main-menu .classynav ul li ul li a {
+        .header-area .main-menu .classynav ul li ul li a {
           padding: 0 45px;
           color: #ffffff; } }
       @media only screen and (max-width: 767px) {
-        .header-area .alazea-main-menu .classynav ul li ul li a {
+        .header-area .main-menu .classynav ul li ul li a {
           padding: 0 45px;
           color: #ffffff; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .header-area .alazea-main-menu .classy-navbar-toggler .navbarToggler span {
+      .header-area .main-menu .classy-navbar-toggler .navbarToggler span {
         background-color: #ffffff; } }
     @media only screen and (max-width: 767px) {
-      .header-area .alazea-main-menu .classy-navbar-toggler .navbarToggler span {
+      .header-area .main-menu .classy-navbar-toggler .navbarToggler span {
         background-color: #ffffff; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .header-area .alazea-main-menu .classycloseIcon .cross-wrap span {
+      .header-area .main-menu .classycloseIcon .cross-wrap span {
         background: #ffffff; } }
     @media only screen and (max-width: 767px) {
-      .header-area .alazea-main-menu .classycloseIcon .cross-wrap span {
+      .header-area .main-menu .classycloseIcon .cross-wrap span {
         background: #ffffff; } }
-    .header-area .alazea-main-menu .search-form {
+    .header-area .main-menu .search-form {
       position: relative;
       z-index: 1;
       opacity: 0;
       visibility: hidden;
       -webkit-transition-duration: 500ms;
       transition-duration: 500ms; }
-      .header-area .alazea-main-menu .search-form form {
+      .header-area .main-menu .search-form form {
         -webkit-transition-duration: 500ms;
         transition-duration: 500ms;
         position: absolute;
@@ -477,10 +477,10 @@ img {
         padding: 30px;
         box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.15); }
         @media only screen and (max-width: 767px) {
-          .header-area .alazea-main-menu .search-form form {
+          .header-area .main-menu .search-form form {
             width: 290px;
             padding: 20px; } }
-        .header-area .alazea-main-menu .search-form form input {
+        .header-area .main-menu .search-form form input {
           width: 100%;
           height: 45px;
           border: 1px solid #ebebeb;
@@ -488,9 +488,9 @@ img {
           border-radius: 5px;
           font-size: 14px; }
           @media only screen and (max-width: 767px) {
-            .header-area .alazea-main-menu .search-form form input {
+            .header-area .main-menu .search-form form input {
               padding: 0 15px; } }
-      .header-area .alazea-main-menu .search-form .closeIcon {
+      .header-area .main-menu .search-form .closeIcon {
         -webkit-transition-duration: 500ms;
         transition-duration: 500ms;
         position: absolute;
@@ -499,16 +499,16 @@ img {
         z-index: 200;
         cursor: pointer;
         color: #707070; }
-        .header-area .alazea-main-menu .search-form .closeIcon:hover {
+        .header-area .main-menu .search-form .closeIcon:hover {
           color: #70c745; }
         @media only screen and (max-width: 767px) {
-          .header-area .alazea-main-menu .search-form .closeIcon {
+          .header-area .main-menu .search-form .closeIcon {
             top: 31px;
             right: 35px; } }
-      .header-area .alazea-main-menu .search-form.active {
+      .header-area .main-menu .search-form.active {
         opacity: 1;
         visibility: visible; }
-  .header-area .is-sticky .alazea-main-menu {
+  .header-area .is-sticky .main-menu {
     background-color: #111111;
     position: fixed;
     width: 100%;
@@ -1494,17 +1494,17 @@ img {
     background-color: #ebebeb;
     margin-top: 50px; }
 
-.alazea-progress-bar {
+.progress-bar {
   position: relative;
   z-index: 1;
   margin-top: 40px; }
-  .alazea-progress-bar .single_progress_bar {
+  .progress-bar .single_progress_bar {
     position: relative;
     z-index: 1;
     margin-bottom: 30px; }
-    .alazea-progress-bar .single_progress_bar:last-child {
+    .progress-bar .single_progress_bar:last-child {
       margin-bottom: 0; }
-    .alazea-progress-bar .single_progress_bar p {
+    .progress-bar .single_progress_bar p {
       font-weight: 500;
       line-height: 1;
       font-size: 18px;
@@ -1639,12 +1639,12 @@ img {
     visibility: visible; }
 
 /* :: 15.0 Portfolio Area CSS */
-.alazea-portfolio-filter {
+.portfolio-filter {
   position: relative;
   z-index: 1;
   text-align: center;
   margin-bottom: 30px; }
-  .alazea-portfolio-filter .btn {
+  .portfolio-filter .btn {
     -webkit-transition-duration: 300ms;
     transition-duration: 300ms;
     padding: 0;
@@ -1654,17 +1654,17 @@ img {
     background-color: transparent;
     padding: 0 20px; }
     @media only screen and (max-width: 767px) {
-      .alazea-portfolio-filter .btn {
+      .portfolio-filter .btn {
         font-size: 16px;
         padding: 0 5px; } }
-    .alazea-portfolio-filter .btn:hover, .alazea-portfolio-filter .btn:focus {
+    .portfolio-filter .btn:hover, .portfolio-filter .btn:focus {
       color: #70c745;
       box-shadow: none; }
 
-.alazea-portfolio.row {
+.portfolio.row {
   margin-right: -10px;
   margin-left: -10px; }
-.alazea-portfolio .col-12 {
+.portfolio .col-12 {
   padding-left: 10px;
   padding-right: 10px; }
 
