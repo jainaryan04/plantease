@@ -1578,53 +1578,67 @@ img {
     background-color: #ebebeb;
     margin-top: 50px; }
 
-.alazea-progress-bar {
-  position: relative;
-  z-index: 1;
-  margin-top: 40px; }
-  .alazea-progress-bar .single_progress_bar {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 30px; }
-    .alazea-progress-bar .single_progress_bar:last-child {
-      margin-bottom: 0; }
-    .alazea-progress-bar .single_progress_bar p {
-      font-weight: 500;
-      line-height: 1;
-      font-size: 18px;
-      color: #303030;
-      margin-bottom: 10px; }
 
-.barfiller {
-  background-color: #ebebeb;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  height: 10px;
-  margin-bottom: 5px;
-  position: relative;
-  width: 100%; }
-  .barfiller .fill {
-    display: block;
-    position: relative;
-    width: 0px;
-    height: 100%;
-    background: #70c745;
-    z-index: 1; }
-  .barfiller .tipWrap {
-    display: none; }
-  .barfiller .tip {
-    margin-top: -35px;
-    padding: 2px 4px;
-    font-size: 18px;
-    color: #303030;
-    left: 0;
-    position: absolute;
-    z-index: 2;
-    background: transparent;
-    font-weight: 500; }
-    .barfiller .tip::after {
-      display: none; }
+
+
+
+
+    .alazea-progress-bar {
+      position: relative;
+      z-index: 1;
+      margin-top: 40px; }
+      .alazea-progress-bar .single_progress_bar {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 30px; }
+        .alazea-progress-bar .single_progress_bar:last-child {
+          margin-bottom: 0; }
+        .alazea-progress-bar .single_progress_bar p {
+          font-weight: 500;
+          line-height: 1;
+          font-size: 18px;
+          color: #303030;
+          margin-bottom: 10px; }
+    
+    .barfiller {
+      background-color: #ebebeb;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      height: 10px;
+      margin-bottom: 5px;
+      position: relative;
+      width: 100%; }
+      .barfiller .fill {
+        display: block;
+        position: relative;
+        width: 0px;
+        height: 100%;
+        background: #70c745;
+        z-index: 1; }
+      .barfiller .tipWrap {
+        display: none; }
+      .barfiller .tip {
+        margin-top: -35px;
+        padding: 2px 4px;
+        font-size: 18px;
+        color: #303030;
+        left: 0;
+        position: absolute;
+        z-index: 2;
+        background: transparent;
+        font-weight: 500; }
+        .barfiller .tip::after {
+          display: none; }
+
+
+
+    
+
+
+
+
+
 
 .single-benefits-area {
   position: relative;

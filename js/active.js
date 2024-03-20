@@ -1,5 +1,5 @@
 (function ($) {
-    'use strict';
+    'use strict';    
 
     var browserWindow = $(window);
 
@@ -102,9 +102,27 @@
         });
     }
 
-    // Barfiller Active Code
+    // :: 7.0 Barfiller Active Code
     if ($.fn.barfiller) {
-        $('#bar1, #bar2, #bar3, #bar4').barfiller({
+        $('#bar1').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#70c745',
+            animateOnResize: true
+        });
+        $('#bar2').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#70c745',
+            animateOnResize: true
+        });
+        $('#bar3').barfiller({
+            tooltip: true,
+            duration: 1000,
+            barColor: '#70c745',
+            animateOnResize: true
+        });
+        $('#bar4').barfiller({
             tooltip: true,
             duration: 1000,
             barColor: '#70c745',
