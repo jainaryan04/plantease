@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Blog</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    
+
+    <% if (locals.post) { %>
+      <h1>Add Answer</h1>
+      <form id="editForm" method="post" action="/api/posts/<%=post.id%>">
+        <h2><%=post.title %></h2>
+        <input type="text" name="content" placeholder="Answer" value="<%=post.content %>">
+        <input type="text" name="author" placeholder="Name" value="<%=post.author %>">
+        <button class="full-width" type="submit">
+          Add Answer
+        </button>
+      </form>
+      <% } else {%>
+        <h1>Add Question</h1>
+        <form id="newPostForm" method="post" action="/api/posts">
+          <input type="text" name="title" placeholder="Question" required>
+          <input type="text" name="asked" placeholder="Name" required>
+          <button class="full-width" type="submit">
+            Add Question
+          </button>
+        </form>
+        <% } %>
+
+  </div>
+</body>
+
+</html>

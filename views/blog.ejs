@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Easing Plant Care</h1>
+    <a id="newPostBtn" href="/new">Add Question</a>
+    <ul id="postsList">
+      <% posts.forEach(post=> { %>
+        <li>
+          <h2>
+            <%=post.title%>
+          </h2>
+          <small>Asked By: <%=post.asked%> </small>
+          
+          <p>
+            <%=post.content%>
+          </p>
+          <small>Answered By: <%=post.author%> </small>
+          <%if(post.content){%>
+          <%}else{%>
+          <a class="edit" href="/addans/<%= post.id %>">Add Answer</a>
+          <%}%>
+          
+        </li>
+        <% }); %>
+    </ul>
+  </div>
+
+</body>
+
+</html>

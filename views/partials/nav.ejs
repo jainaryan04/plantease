@@ -45,7 +45,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="garden.ejs">Garden</a></li>
-                                <li><a href="community.ejs">Community</a></li>
+                                <li><a href="/comms">Community</a></li>
                                 <% if (locals.email) { %> 
                                     <li style="color: white;"> <%= locals.email %> </li>
                                 <%} else { %>
@@ -53,8 +53,13 @@
                                 <% } %>
                             </ul>
                             <div id="cartIcon">
-                                <a href="cart.ejs"></a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-                            </div>
+                                <a href="/cart">
+                                    <div id="cartIcon">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>  
+                            
                             <div id="searchIcon">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </div>

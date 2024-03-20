@@ -1,0 +1,302 @@
+<%- include('partials/nav.ejs') %>
+
+<div class="breadcrumb-area">
+    <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(images/home3.jpg);">
+        <h2>Cart</h2>
+    </div>
+    <br>
+</div>
+
+<!-- Cart -->
+<div class="cart-area section-padding-0-100 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="cart-table clearfix">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>Products</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% if(locals.q1>0) { %>
+                                <tr id="1">
+                                    <td class="cart_product_img">
+                                        <a href="#"><img src="images/prod1.jpg" alt="Product"></a>
+                                        <h5>Day Lily</h5>
+                                    </td>
+                                    <td class="qty">
+                                        <div class="quantity">
+                                            <span class="qty-minus" onclick="decrementQuantity('qty1',172,'price1')"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                            <input type="number" class="qty-text" id="qty1" step="1" min="1" max="99" name="quantity" value="<%=locals.q1%>" onchange="updatePrice('qty1')">
+                                            <span class="qty-plus" onclick="incrementQuantity('qty1',172,'price1')"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        </div>
+                                    </td>
+                                    <td class="price"><span id="price1">₹<%=locals.q1*172%></span></td>
+                                    <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                </tr>
+                                
+                                
+                                <%}%>
+                                
+                            <% if(locals.q2>0) { %>
+                            <tr id="2">
+                                <td class="cart_product_img">
+                                    <a href="#"><img src="images/prod2.jpg" alt="Product"></a>
+                                    <h5>Bio Fertilizers</h5>
+                                </td>
+                                <td class="qty">
+                                    <div class="quantity">
+                                        <span class="qty-minus" onclick="decrementQuantity('qty2',285,'price2')"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                            <input type="number" class="qty-text" id="qty2" step="1" min="1" max="99" name="quantity" value="<%=locals.q2%>" onchange="updatePrice('qty2')">
+                                            <span class="qty-plus" onclick="incrementQuantity('qty2',285,'price2')"><i class="fa fa-plus" aria-hidden="true"></i></span></div>
+                                </td>
+                                <td class="price2"><span>₹<%=locals.q2*285%></span></td>
+                                <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                <%}%>
+                            </tr>
+                            <% if(locals.q3>0) { %>
+                                <tr id="3">
+                                    <td class="cart_product_img">
+                                        <a href="#"><img src="images/prod3.jpg" alt="Product"></a>
+                                        <h5>Aloe Vera</h5>
+                                    </td>
+                                    <td class="qty">
+                                        <div class="quantity">
+                                            <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                            <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q3%>">
+                                            <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        </div>
+                                    </td>
+                                    <td class="price"><span>₹<%=locals.q3*210%></span></td>
+                                    <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                    <%}%>
+                                </tr>
+                                <% if(locals.q4>0) { %>
+                                    <tr id="4">
+                                        <td class="cart_product_img">
+                                            <a href="#"><img src="images/prod4.jpg" alt="Product"></a>
+                                            <h5>IoT Device</h5>
+                                        </td>
+                                        <td class="qty">
+                                            <div class="quantity">
+                                                <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q4%>">
+                                                <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                            </div>
+                                        </td>
+                                        <td class="price">₹<span><%=locals.q4*1899%></span></td>
+                                        <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                        <%}%>
+                                    </tr>
+                                    <% if(locals.q5>0) { %>
+                                        <tr id="5">
+                                            <td class="cart_product_img">
+                                                <a href="#"><img src="images/prod5.jpg" alt="Product"></a>
+                                                <h5>Calathea</h5>
+                                            </td>
+                                            <td class="qty">
+                                                <div class="quantity">
+                                                    <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q5%>">
+                                                    <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                </div>
+                                            </td>
+                                            <td class="price">₹<span><%=locals.q5*1199%></span></td>
+                                            <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                            <%}%>
+                                        </tr>
+                                    <% if(locals.q6>0) { %>
+                                        <tr id="6">
+                                            <td class="cart_product_img">
+                                                <a href="#"><img src="images/prod6.jpg" alt="Product"></a>
+                                                <h5>Sickle</h5>
+                                            </td>
+                                            <td class="qty">
+                                                <div class="quantity">
+                                                    <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q6%>">                                                        <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                    </div>
+                                                </td>
+                                                <td class="price">₹<span><%=locals.q6*348%></span></td>
+                                                <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                                <%}%>
+                                            </tr>
+                            <% if(locals.q7>0) { %>
+                            <tr id="7">
+                                <td class="cart_product_img">
+                                    <a href="#"><img src="images/prod7.jpg" alt="Product"></a>
+                                    <h5>Tulsi</h5>
+                                </td>
+                                <td class="qty">
+                                    <div class="quantity">
+                                        <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                        <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q7%>">
+                                        <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    </div>
+                                </td>
+                                <td class="price"><span>₹<%=locals.q7*175%></span></td>
+                                <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                <%}%>
+                            </tr>
+                            <% if(locals.q8>0) { %>
+                                <tr id="8">
+                                    <td class="cart_product_img">
+                                        <a href="#"><img src="images/prod8.jpg" alt="Product"></a>
+                                        <h5>Seed Basket</h5>
+                                    </td>
+                                    <td class="qty">
+                                        <div class="quantity">
+                                            <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                            <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q8%>">
+                                            <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                        </div>
+                                    </td>
+                                    <td class="price">₹<span><%=locals.q8*549%></span></td>
+                                    <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                    <%}%>
+                                </tr>
+                                <% if(locals.q9>0) { %>
+                                    <tr id="9">
+                                        <td class="cart_product_img">
+                                            <a href="#"><img src="images/prod9.jpg" alt="Product"></a>
+                                            <h5>Aglaonema</h5>
+                                        </td>
+                                        <td class="qty">
+                                            <div class="quantity">
+                                                <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q9%>">
+                                                <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                            </div>
+                                        </td>
+                                        <td class="price">₹<span><%=locals.q9*138%></span></td>
+                                        <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                        <%}%>
+                                    </tr>
+                                    <% if(locals.q10>0) { %>
+                                        <tr id="10">
+                                            <td class="cart_product_img">
+                                                <a href="#"><img src="images/prod10.jpg" alt="Product"></a>
+                                                <h5>Pesticide</h5>
+                                            </td>
+                                            <td class="qty">
+                                                <div class="quantity">
+                                                    <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q10%>">
+                                                    <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                </div>
+                                            </td>
+                                            <td class="price">₹<span><%=locals.q10*799%></span></td>
+                                            <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                            <%}%>
+                                        </tr>
+                                        <% if(locals.q11>0) { %>
+                                            <tr id="11">
+                                                <td class="cart_product_img">
+                                                    <a href="#"><img src="images/prod11.jpg" alt="Product"></a>
+                                                    <h5>Chamomile</h5>
+                                                </td>
+                                                <td class="qty">
+                                                    <div class="quantity">
+                                                        <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="<%=locals.q11%>">
+                                                        <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                    </div>
+                                                </td>
+                                                <td class="price"><span>₹<%=locals.q11*569%></span></td>
+                                                <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                                                <%}%>
+                                            </tr>
+
+                                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="coupon-discount mt-70">
+                    <h5>COUPON DISCOUNT</h5>
+                    <p>Coupons can be applied in the cart prior to checkout. The order total will update to indicate the savings specific to the coupon code entered.</p>
+                    <form action="#" method="post">
+                        <input type="text" name="coupon-code" placeholder="Enter your coupon code">
+                        <button type="submit">APPLY COUPON</button>
+                    </form>
+                    <br>
+                    <p style="font-weight: bold;">Discount of ₹99.99 applied on your order.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="cart-totals-area mt-70">
+                    <h5 class="title--">Cart Total</h5>
+                    <div class="subtotal">
+                        <div class="d-flex justify-content-between" style="margin-bottom: 10px;">
+                            <h5>Subtotal</h5>
+                            <h5 id="subid">₹<%=locals.amt%></h5>
+                        </div>
+                        <div class="d-flex justify-content-between" style="margin-bottom: 10px;">
+                            <h5>Delivery Charges</h5>
+                            <h5>₹79.99</h5>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h5>Promotion Applied</h5>
+                            <h5>₹99.99</h5>
+                        </div>
+                    </div>                        
+                    <div class="total d-flex justify-content-between">
+                        <h5 style="font-weight: bolder;">Grand Total</h5>
+                        <h5 style="font-weight: bolder;"><%=locals.amt-20%></h5>
+                    </div>
+                    <div class="checkout-btn">
+                        <a href="#" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> 
+<script>
+    function incrementQuantity(inputId,p,priceId) {
+        var inputElement = document.getElementById(inputId);
+        var currentValue = parseInt(inputElement.value);
+
+        if (!isNaN(currentValue) && currentValue < 99) {
+            inputElement.value = currentValue + 1;
+            updatePrice(inputId,p,priceId);
+        }
+    }
+
+    function decrementQuantity(inputId,p,priceId) {
+        var inputElement = document.getElementById(inputId);
+        var currentValue = parseInt(inputElement.value);
+        if (!isNaN(currentValue) && currentValue > 1) {
+            inputElement.value = currentValue - 1;
+            updatePrice(inputId,p,priceId);
+        }
+    }
+
+    function updatePrice(inputId,p,priceId) {
+        var inputElement = document.getElementById(inputId);
+        var quantity = parseInt(inputElement.value);
+        var priceElement = document.getElementById(priceId);
+        if (!isNaN(quantity)) {
+            priceElement.innerText = '₹' + (quantity * p);
+        }
+        //updateSubtotal(p);
+    }
+    function updateSubtotal(p) {
+        var inputElement=document.getElementById("subid")
+        var amt=inputElement.innertext
+        inputElement.innertext= (amt+p)
+    }
+</script>
+
+<%- include('partials/homefooter.ejs') %>
