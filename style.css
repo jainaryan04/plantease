@@ -683,6 +683,13 @@ img {
     left: 5%;
     z-index: 10; }
 
+
+    
+
+
+
+
+
 /* :: 7.0 New Arrivals Products Area */
 .single-product-area {
   position: relative;
@@ -774,6 +781,15 @@ img {
     .single-product-area:hover .product-img .product-meta {
       visibility: visible;
       opacity: 1; }
+
+
+
+
+
+
+
+
+
 
 /* :: 8.0 Shop Page Area CSS */
 .shop-sorting-data {
@@ -1165,60 +1181,93 @@ img {
   border-radius: 0;
   background-color: #f2f4f5; }
 
-/* :: 9.0 Cart Area CSS */
-.cart-table {
-  position: relative;
-  z-index: 1; }
+
+
+
+
+
+
+
+  .container {
+    width: 100%; /* Ensure the container covers the full width */
+    max-width: none; /* Remove any max-width restrictions */
+  }
+  
+  .cart-table {
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Ensure cart table covers page width */
+    overflow-x: auto; /* Add horizontal scroll if necessary */
+  }
+  
   .cart-table thead tr,
   .cart-table thead th {
-    width: 20%; }
+    width: auto; /* Allow the column width to adjust */
+  }
+  
   .cart-table thead th {
     border: none;
     border-bottom: none;
     font-size: 20px;
-    padding: 0 0 30px 0;
+    padding: 0 15px 30px 0; /* Add padding between cells */
     color: #303030;
     font-weight: 500;
     text-transform: uppercase;
-    text-align: left; }
-    .cart-table thead th:first-child {
-      width: 40%; }
+    text-align: left;
+  }
+  
+  .cart-table thead th:first-child {
+    width: 40%;
+  }
+  
   .cart-table tbody tr {
     position: relative;
     z-index: 1;
-    border-bottom: 1px solid #ebebeb; }
-    .cart-table tbody tr td {
-      position: relative;
-      z-index: 1;
-      padding: 30px 15px;
-      font-size: 18px;
-      font-weight: 600;
-      color: #303030;
-      vertical-align: middle; }
-      .cart-table tbody tr td.cart_product_img {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -ms-grid-row-align: center;
-        align-items: center; }
-        .cart-table tbody tr td.cart_product_img a {
-          -webkit-box-flex: 0;
-          -ms-flex: 0 0 100px;
-          flex: 0 0 100px;
-          max-width: 100px;
-          width: 100px;
-          display: inline-block;
-          margin-right: 20px;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-          margin-left: 2px; }
-        .cart-table tbody tr td.cart_product_img h5 {
-          font-size: 18px;
-          margin-bottom: 0; }
-      .cart-table tbody tr td i {
-        font-size: 36px;
-        color: #c42525; }
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  .cart-table tbody tr td {
+    position: relative;
+    z-index: 1;
+    padding: 30px 15px; /* Add padding between cells */
+    font-size: 18px;
+    font-weight: 600;
+    color: #303030;
+    vertical-align: middle;
+  }
+  
+  .cart-table tbody tr td.cart_product_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+  }
+  
+  .cart-table tbody tr td.cart_product_img a {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+    max-width: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    margin-left: 2px;
+  }
+  
+  .cart-table tbody tr td.cart_product_img h5 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .cart-table tbody tr td i {
+    font-size: 36px;
+    color: #c42525;
+  }
+  
   .cart-table .quantity {
     position: relative;
     z-index: 1;
@@ -1226,39 +1275,57 @@ img {
     -ms-flex: 0 0 100px;
     flex: 0 0 100px;
     max-width: 100px;
-    width: 100px; }
-    .cart-table .quantity .qty-text {
-      height: 46px;
-      padding: 5px 15px;
-      width: 100px;
-      -moz-appearance: textfield;
-      -webkit-appearance: textfield;
-      appearance: textfield;
-      font-size: 14px;
-      border: none;
-      background-color: #f2f4f5;
-      text-align: center; }
-    .cart-table .quantity .qty-minus,
-    .cart-table .quantity .qty-plus {
-      display: block;
-      height: 100%;
-      position: absolute;
-      left: 10px;
-      text-align: center;
-      top: 0;
-      width: 30px;
-      z-index: 99;
-      cursor: pointer;
-      font-size: 8px;
-      line-height: 46px;
-      color: #303030; }
-      .cart-table .quantity .qty-minus i,
-      .cart-table .quantity .qty-plus i {
-        font-size: 10px;
-        color: #303030; }
-    .cart-table .quantity .qty-plus {
-      left: auto;
-      right: 10px; }
+    width: 100px;
+  }
+  
+  .cart-table .quantity .qty-text {
+    height: 46px;
+    padding: 5px 15px;
+    width: 100px;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    font-size: 14px;
+    border: none;
+    background-color: #f2f4f5;
+    text-align: center;
+  }
+  
+  .cart-table .quantity .qty-minus,
+  .cart-table .quantity .qty-plus {
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    top: 0;
+    width: 30px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 8px;
+    line-height: 46px;
+    color: #303030;
+  }
+  
+  .cart-table .quantity .qty-minus i,
+  .cart-table .quantity .qty-plus i {
+    font-size: 10px;
+    color: #303030;
+  }
+  
+  .cart-table .quantity .qty-plus {
+    left: auto;
+    right: 10px;
+  }
+  
+
+
+
+
+
+
+
+
 
 .coupon-discount {
   position: relative;

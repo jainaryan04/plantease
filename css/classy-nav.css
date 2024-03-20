@@ -1,22 +1,9 @@
-/* [ -- Master Stylesheet -- ] */
-/* ----------------------------------------------------------
-:: Template Name: ClassyNav - Responsive Mega Menu Plugins
-:: Author: Designing World
-:: Author URL: https://themeforest.net/user/designing-world/portfolio
-:: Version: 1.0.0
-:: Created: May 16, 2018
-:: Last Updated: May 16, 2018
----------------------------------------------------------- */
-/* Base CSS */
 * {
   margin: 0;
   padding: 0; }
-
 body {
   font-family: "Roboto", sans-serif; }
-
-ul,
-ol {
+ul,ol {
   margin: 0; }
   ul li,
   ol li {
@@ -94,7 +81,7 @@ img {
   .classy-navbar .nav-brand {
     font-size: 26px;
     font-weight: 500;
-    color: #565656;
+    color: white;
     display: inline-block;
     margin-right: 30px; }
     .classy-navbar .nav-brand:focus, .classy-navbar .nav-brand:hover {
@@ -584,7 +571,3 @@ img {
 .dropdown-rtl.breakpoint-on .classynav ul li ul.dropdown li ul li {
   margin-left: 0;
   margin-right: 15px; }
-
-/* Fallback Responsive CSS */
-
-/*# sourceMappingURL=classy-nav.css.map */
