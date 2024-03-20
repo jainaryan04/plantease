@@ -3,19 +3,19 @@
 
     var browserWindow = $(window);
 
-    // :: 1.0 Preloader Active Code
+    // Preloader Active Code
     browserWindow.on('load', function () {
         $('.preloader').fadeOut('slow', function () {
             $(this).remove();
         });
     });
 
-    // :: 2.0 Nav Active Code
+    // Nav Active Code
     if ($.fn.classyNav) {
         $('#alazeaNav').classyNav();
     }
 
-    // :: 3.0 Search Active Code
+    // Search Active Code
     $('#searchIcon').on('click', function () {
         $('.search-form').toggleClass('active');
     });
@@ -23,7 +23,7 @@
         $('.search-form').removeClass('active');
     });
 
-    // :: 4.0 Sliders Active Code
+    // Sliders Active Code
     if ($.fn.owlCarousel) {
         var welcomeSlide = $('.hero-post-slides');
         var testiSlides = $('.testimonials-slides');
@@ -68,17 +68,17 @@
         });
     }
 
-    // :: 5.0 Masonary Gallery Active Code
+    // Masonry Gallery Active Code
     if ($.fn.imagesLoaded) {
         $('.alazea-portfolio').imagesLoaded(function () {
-            // filter items on button click
+            // Filter items on button click
             $('.portfolio-filter').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
                 });
             });
-            // init Isotope
+            // Initialize Isotope
             var $grid = $('.alazea-portfolio').isotope({
                 itemSelector: '.single_portfolio_item',
                 percentPosition: true,
@@ -89,7 +89,7 @@
         });
     }
 
-    // :: 6.0 magnificPopup Active Code
+    // Magnific Popup Active Code
     if ($.fn.magnificPopup) {
         $('.portfolio-img, .product-img').magnificPopup({
             gallery: {
@@ -102,27 +102,9 @@
         });
     }
 
-    // :: 7.0 Barfiller Active Code
+    // Barfiller Active Code
     if ($.fn.barfiller) {
-        $('#bar1').barfiller({
-            tooltip: true,
-            duration: 1000,
-            barColor: '#70c745',
-            animateOnResize: true
-        });
-        $('#bar2').barfiller({
-            tooltip: true,
-            duration: 1000,
-            barColor: '#70c745',
-            animateOnResize: true
-        });
-        $('#bar3').barfiller({
-            tooltip: true,
-            duration: 1000,
-            barColor: '#70c745',
-            animateOnResize: true
-        });
-        $('#bar4').barfiller({
+        $('#bar1, #bar2, #bar3, #bar4').barfiller({
             tooltip: true,
             duration: 1000,
             barColor: '#70c745',
@@ -130,7 +112,7 @@
         });
     }
 
-    // :: 8.0 ScrollUp Active Code
+    // ScrollUp Active Code
     if ($.fn.scrollUp) {
         browserWindow.scrollUp({
             scrollSpeed: 1500,
@@ -138,7 +120,7 @@
         });
     }
 
-    // :: 9.0 CounterUp Active Code
+    // CounterUp Active Code
     if ($.fn.counterUp) {
         $('.counter').counterUp({
             delay: 10,
@@ -146,26 +128,26 @@
         });
     }
 
-    // :: 10.0 Sticky Active Code
+    // Sticky Active Code
     if ($.fn.sticky) {
         $(".alazea-main-menu").sticky({
             topSpacing: 0
         });
     }
 
-    // :: 11.0 Tooltip Active Code
+    // Tooltip Active Code
     if ($.fn.tooltip) {
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
     }
 
-    // :: 12.0 Price Range Active Code
+    // Price Range Active Code
     $('.slider-range-price').each(function () {
-        var min = jQuery(this).data('min');
-        var max = jQuery(this).data('max');
-        var unit = jQuery(this).data('unit');
-        var value_min = jQuery(this).data('value-min');
-        var value_max = jQuery(this).data('value-max');
-        var label_result = jQuery(this).data('label-result');
+        var min = $(this).data('min');
+        var max = $(this).data('max');
+        var unit = $(this).data('unit');
+        var value_min = $(this).data('value-min');
+        var value_max = $(this).data('value-max');
+        var label_result = $(this).data('label-result');
         var t = $(this);
         $(this).slider({
             range: true,
@@ -178,14 +160,19 @@
                 t.closest('.slider-range').find('.range-price').html(result);
             }
         });
-    })
-
-    // :: 13.0 prevent default a click
-    $('a[href="#"]').on('click', function ($) {
-        $.preventDefault();
     });
 
-    // :: 14.0 wow Active Code
+    // Prevent default click action
+    $('a[href="#"]').on('click', function (event) {
+        event.preventDefault();
+    });
+
+    // Redirect to cart page
+    $('.single-product-area').on('click', function () {
+        window.location.href = 'cart.html';
+    });
+
+    // WOW Active Code
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
