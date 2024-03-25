@@ -24,20 +24,26 @@ Frontend -
   The frontend of the website is developed using html,css and javascript.Bootstrap is used for maintaining the responsiveness of the website. 
 
 
-
-. 
-
-
 INSPIRATION :
-1.Market Demand: Observing a growing interest in indoor and outdoor gardening, houseplants, landscaping, and sustainable living can inspire the creation of a plant e-commerce website.
-2.Environmental Awareness:Building a plant e-commerce website aligned with eco-friendly practices can attract environmentally conscious consumers.
-3.Technological Advancements: Advances in e-commerce platforms, website development tools, and digital marketing techniques make it easier than ever to establish an online presence for selling plants. AI-powered recommendations can enhance the user experience and set your website apart from competitors.
-4.Community Building: Creating a platform where plant enthusiasts can connect, share tips, and learn from each other can foster a sense of community and support the growth of a loyal customer base.
+
+  1.Market Demand: Observing a growing interest in indoor and outdoor gardening, houseplants, landscaping, and sustainable living can inspire the creation of a plant e-commerce website.
+  
+  2.Environmental Awareness:Building a plant e-commerce website aligned with eco-friendly practices can attract environmentally conscious consumers.
+  
+  3.Technological Advancements: Advances in e-commerce platforms, website development tools, and digital marketing techniques make it easier than ever to establish an online presence for selling plants. AI-     
+     powered recommendations can enhance the user experience and set your website apart from competitors.
+  
+  4.Community Building: Creating a platform where plant enthusiasts can connect, share tips, and learn from each other can foster a sense of community and support the growth of a loyal customer base.
+
 LEARNINGS :
-1.Website Development:Learned different aspects of web development including , frontend,backend ,database management.
-2.Artificial intelligence : Usage of AI for providing solutions of all kinds of customer’s doubts by training LLM model using transformer(chatGPT 3.5 turbo) & tuning the dataset for our customize usage .
-3.Design :Learned creating the primary design of the website using figma. 
-4.Adaptability and Innovation:Building an e-commerce website for plants can teaches us the importance of adaptability and innovation in staying competitive and meeting the changing needs of our customers.
+  
+  1.Website Development:Learned different aspects of web development including , frontend,backend ,database management.
+  
+  2.Artificial intelligence : Usage of AI for providing solutions of all kinds of customer’s doubts by training LLM model using transformer(chatGPT 3.5 turbo) & tuning the dataset for our customize usage .
+  
+  3.Design :Learned creating the primary design of the website using figma. 
+  
+  4.Adaptability and Innovation:Building an e-commerce website for plants can teaches us the importance of adaptability and innovation in staying competitive and meeting the changing needs of our customers.
 
 
  
